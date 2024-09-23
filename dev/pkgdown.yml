@@ -1,13 +1,13 @@
-pandoc: 2.7.3
-pkgdown: 2.0.1
+pandoc: 3.1.11
+pkgdown: 2.1.1
 pkgdown_sha: ~
 articles:
-  badge-accessibility: badge-accessibility.html
-  git-credentials: git-credentials.html
-  pr-functions: pr-functions.html
-  usethis-setup: usethis-setup.html
-last_built: 2022-01-05T05:12Z
+  articles/badge-accessibility: badge-accessibility.html
+  articles/git-credentials: git-credentials.html
+  articles/pr-functions: pr-functions.html
+  articles/ui-cli-conversion: ui-cli-conversion.html
+  articles/usethis-setup: usethis-setup.html
+last_built: 2024-09-23T11:44Z
 urls:
   reference: https://usethis.r-lib.org/reference
   article: https://usethis.r-lib.org/articles
-
