@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">usethis</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">3.2.0.9000</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">3.2.1.9000</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,11 +55,14 @@
 
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="development version" id="usethis-development-version">usethis (development version)<a class="anchor" aria-label="anchor" href="#usethis-development-version"></a></h2>
+</div>
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="3.2.1" id="usethis-321">usethis 3.2.1<a class="anchor" aria-label="anchor" href="#usethis-321"></a></h2>
 <ul><li>
 <code><a href="../reference/create_package.html">create_quarto_project()</a></code> exits early if the Quarto CLI does not appear to be installed and related tests are skipped (<a href="https://github.com/r-lib/usethis/issues/2162" class="external-link">#2162</a>).</li>
 </ul></div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="3.2.0" id="usethis-320">usethis 3.2.0<a class="anchor" aria-label="anchor" href="#usethis-320"></a></h2><p class="text-muted">CRAN release: 2025-08-28</p>
+<h2 class="pkg-version" data-toc-text="3.2.0" id="usethis-320">usethis 3.2.0<a class="anchor" aria-label="anchor" href="#usethis-320"></a></h2>
 <div class="section level3">
 <h3 id="formatting-3-2-0">Formatting<a class="anchor" aria-label="anchor" href="#formatting-3-2-0"></a></h3>
 <ul><li><p><code><a href="../reference/use_air.html">use_air()</a></code> is a new function to configure a project to use <a href="https://posit-dev.github.io/air/" class="external-link">Air</a>, an extremely fast R code formatter.</p></li>
@@ -101,7 +104,7 @@
 </ul></div>
 </div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="3.1.0" id="usethis-310">usethis 3.1.0<a class="anchor" aria-label="anchor" href="#usethis-310"></a></h2><p class="text-muted">CRAN release: 2024-11-26</p>
+<h2 class="pkg-version" data-toc-text="3.1.0" id="usethis-310">usethis 3.1.0<a class="anchor" aria-label="anchor" href="#usethis-310"></a></h2>
 <ul><li><p><code><a href="../reference/use_vignette.html">use_vignette()</a></code> and <code><a href="../reference/use_vignette.html">use_article()</a></code> support Quarto. The <code>name</code> of the new vignette or article can optionally include a file extension to signal whether <code>.Rmd</code> or <code>.qmd</code> is desired, with <code>.Rmd</code> remaining the default for now. Thanks to <a href="https://github.com/olivroy" class="external-link">@olivroy</a> for getting the ball rolling (<a href="https://github.com/r-lib/usethis/issues/1997" class="external-link">#1997</a>).</p></li>
 <li><p><code><a href="../reference/use_data.html">use_data()</a></code> defaults to serialization version 3 (<a href="https://github.com/laurabrianna" class="external-link">@laurabrianna</a>, <a href="https://github.com/r-lib/usethis/issues/2044" class="external-link">#2044</a>).</p></li>
 <li><p><code><a href="../reference/use_package.html">use_package()</a></code> can lower a minimum version requirement (<a href="https://github.com/jplecavalier" class="external-link">@jplecavalier</a>, <a href="https://github.com/r-lib/usethis/issues/1957" class="external-link">#1957</a>).</p></li>
@@ -109,7 +112,7 @@
 <li><p><code><a href="../reference/tidyverse.html">use_tidy_upkeep_issue()</a></code> records the year it is being run in the <code>Config/usethis/upkeep</code> field in DESCRIPTION. If this value exists, it is used to filter the checklist when making the issue.</p></li>
 </ul></div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="3.0.0" id="usethis-300">usethis 3.0.0<a class="anchor" aria-label="anchor" href="#usethis-300"></a></h2><p class="text-muted">CRAN release: 2024-07-29</p>
+<h2 class="pkg-version" data-toc-text="3.0.0" id="usethis-300">usethis 3.0.0<a class="anchor" aria-label="anchor" href="#usethis-300"></a></h2>
 <div class="section level3">
 <h3 id="transition-to-cli-package-for-ui-3-0-0">Transition to cli package for UI<a class="anchor" aria-label="anchor" href="#transition-to-cli-package-for-ui-3-0-0"></a></h3>
 <ul><li>The <code>ui_*()</code> functions have been marked as <a href="https://lifecycle.r-lib.org/articles/stages.html#superseded" class="external-link">superseded</a>. External users of these functions are encouraged to use the <a href="https://cli.r-lib.org/" class="external-link">cli package</a> instead. The cli package did not have the required functionality when the <code>usethis::ui_*()</code> functions were first created, but it does now and it’s the superior option. There is a cli vignette about how to make this transition: <code><a href="https://cli.r-lib.org/articles/usethis-ui.html" class="external-link">vignette("usethis-ui", package = "cli")</a></code>. usethis no longer uses the <code>ui_*()</code> functions internally, in favor of new cli-based helpers that are not exported.</li>
@@ -169,20 +172,20 @@
 </ul></div>
 </div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="2.2.3" id="usethis-223">usethis 2.2.3<a class="anchor" aria-label="anchor" href="#usethis-223"></a></h2><p class="text-muted">CRAN release: 2024-02-19</p>
+<h2 class="pkg-version" data-toc-text="2.2.3" id="usethis-223">usethis 2.2.3<a class="anchor" aria-label="anchor" href="#usethis-223"></a></h2>
 <ul><li>Patch release with changes to <code>.Rd</code> files requested by CRAN.</li>
 </ul></div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="2.2.2" id="usethis-222">usethis 2.2.2<a class="anchor" aria-label="anchor" href="#usethis-222"></a></h2><p class="text-muted">CRAN release: 2023-07-05</p>
+<h2 class="pkg-version" data-toc-text="2.2.2" id="usethis-222">usethis 2.2.2<a class="anchor" aria-label="anchor" href="#usethis-222"></a></h2>
 <ul><li>Implicit usage of <code><a href="https://rdrr.io/r/base/numeric_version.html" class="external-link">numeric_version()</a></code> via comparison now always provides character input. This is in response to a request from CRAN to anticipate future solutions to <a href="https://bugs.r-project.org/show_bug.cgi?id=18548" class="external-link uri">https://bugs.r-project.org/show_bug.cgi?id=18548</a>.</li>
 </ul></div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="2.2.1" id="usethis-221">usethis 2.2.1<a class="anchor" aria-label="anchor" href="#usethis-221"></a></h2><p class="text-muted">CRAN release: 2023-06-23</p>
+<h2 class="pkg-version" data-toc-text="2.2.1" id="usethis-221">usethis 2.2.1<a class="anchor" aria-label="anchor" href="#usethis-221"></a></h2>
 <ul><li><p>Internal helper <code>cran_version()</code>, used in functions such as <code>use_release_checklist()</code> and <code><a href="../reference/use_news_md.html">use_news_md()</a></code>, is more resilient to situations where no CRAN mirror has been set (<a href="https://github.com/r-lib/usethis/issues/1857" class="external-link">#1857</a>).</p></li>
 <li><p>Internal usage of <code><a href="https://rdrr.io/r/base/numeric_version.html" class="external-link">numeric_version()</a></code> now always provides character input, rather than relying on implicit <code><a href="https://rdrr.io/r/base/character.html" class="external-link">as.character()</a></code> coercion. This is in response to a request from CRAN to anticipate future solutions to <a href="https://bugs.r-project.org/show_bug.cgi?id=18548" class="external-link uri">https://bugs.r-project.org/show_bug.cgi?id=18548</a> (<a href="https://github.com/r-lib/usethis/issues/1869" class="external-link">#1869</a>).</p></li>
 </ul></div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="2.2.0" id="usethis-220">usethis 2.2.0<a class="anchor" aria-label="anchor" href="#usethis-220"></a></h2><p class="text-muted">CRAN release: 2023-06-06</p>
+<h2 class="pkg-version" data-toc-text="2.2.0" id="usethis-220">usethis 2.2.0<a class="anchor" aria-label="anchor" href="#usethis-220"></a></h2>
 <div class="section level3">
 <h3 id="new-functions-2-2-0">New functions<a class="anchor" aria-label="anchor" href="#new-functions-2-2-0"></a></h3>
 <ul><li><p><code><a href="../reference/use_author.html">use_author()</a></code> is a new function to introduce a new person into the <code>Authors@R</code> field of DESCRIPTION (<a href="https://github.com/avalcarcel9" class="external-link">@avalcarcel9</a>, <a href="https://github.com/r-lib/usethis/issues/833" class="external-link">#833</a>).</p></li>
@@ -245,7 +248,7 @@
 </ul></div>
 </div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="2.1.6" id="usethis-216">usethis 2.1.6<a class="anchor" aria-label="anchor" href="#usethis-216"></a></h2><p class="text-muted">CRAN release: 2022-05-25</p>
+<h2 class="pkg-version" data-toc-text="2.1.6" id="usethis-216">usethis 2.1.6<a class="anchor" aria-label="anchor" href="#usethis-216"></a></h2>
 <div class="section level4">
 <h4 id="github-related-2-1-6">GitHub-related<a class="anchor" aria-label="anchor" href="#github-related-2-1-6"></a></h4>
 <ul><li><p><code><a href="../reference/use_github_action.html">use_github_action()</a></code> and friends gain a <code>ref</code> argument, which defaults to the tag of the latest release in <a href="https://github.com/r-lib/actions" class="external-link uri">https://github.com/r-lib/actions</a> (<a href="https://github.com/r-lib/usethis/issues/1541" class="external-link">#1541</a>).</p></li>
@@ -261,24 +264,24 @@
 </ul></div>
 </div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="2.1.5" id="usethis-215">usethis 2.1.5<a class="anchor" aria-label="anchor" href="#usethis-215"></a></h2><p class="text-muted">CRAN release: 2021-12-09</p>
+<h2 class="pkg-version" data-toc-text="2.1.5" id="usethis-215">usethis 2.1.5<a class="anchor" aria-label="anchor" href="#usethis-215"></a></h2>
 <ul><li><p>pkgdown-related functions no longer automatically strip a trailing slash from the pkgdown site URL, in order to play more nicely with CRAN’s URL checks (<a href="https://github.com/r-lib/usethis/issues/1526" class="external-link">#1526</a>).</p></li>
 <li><p><code><a href="../reference/edit.html">edit_pkgdown_config()</a></code> is a new function that opens the pkgdown YAML configuration file for the current Project, if such a file exists.</p></li>
 <li><p>The error thrown when reporting an unsupported GitHub configuration has been fixed for forward compatibility with a future version of rlang, i.e. what is anticipated to be rlang v1.0.0.</p></li>
 <li><p>Version 2.1.4 was never released. Version was advanced from 2.1.4 to 2.1.5 strictly for CRAN (re-)submission purposes.</p></li>
 </ul></div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="2.1.3" id="usethis-213">usethis 2.1.3<a class="anchor" aria-label="anchor" href="#usethis-213"></a></h2><p class="text-muted">CRAN release: 2021-10-27</p>
+<h2 class="pkg-version" data-toc-text="2.1.3" id="usethis-213">usethis 2.1.3<a class="anchor" aria-label="anchor" href="#usethis-213"></a></h2>
 <ul><li>Modified a test to ensure that intermittent GitHub rate limiting does not lead to ungraceful failure on CRAN.</li>
 </ul></div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="2.1.2" id="usethis-212">usethis 2.1.2<a class="anchor" aria-label="anchor" href="#usethis-212"></a></h2><p class="text-muted">CRAN release: 2021-10-25</p>
+<h2 class="pkg-version" data-toc-text="2.1.2" id="usethis-212">usethis 2.1.2<a class="anchor" aria-label="anchor" href="#usethis-212"></a></h2>
 <ul><li><p><code><a href="../reference/git-default-branch.html">git_default_branch_rename()</a></code> no longer errors on repos where README exists, but has no badge block.</p></li>
 <li><p><code><a href="../reference/git-default-branch.html">git_default_branch_rediscover()</a></code> prunes the defunct remote ref to the old default branch, e.g. <code>origin/master</code>.</p></li>
 <li><p>Version 2.1.1 was never released. Version was advanced from 2.1.1 to 2.1.2 strictly for CRAN (re-)submission purposes.</p></li>
 </ul></div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="2.1.0" id="usethis-210">usethis 2.1.0<a class="anchor" aria-label="anchor" href="#usethis-210"></a></h2><p class="text-muted">CRAN release: 2021-10-16</p>
+<h2 class="pkg-version" data-toc-text="2.1.0" id="usethis-210">usethis 2.1.0<a class="anchor" aria-label="anchor" href="#usethis-210"></a></h2>
 <div class="section level3">
 <h3 id="git-default-branch-support-2-1-0">Git default branch support<a class="anchor" aria-label="anchor" href="#git-default-branch-support-2-1-0"></a></h3>
 <p>usethis has a more sophisticated understanding of the default branch and gains several functions to support default branch renaming.</p>
@@ -337,7 +340,7 @@
 </ul></div>
 </div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="2.0.1" id="usethis-201">usethis 2.0.1<a class="anchor" aria-label="anchor" href="#usethis-201"></a></h2><p class="text-muted">CRAN release: 2021-02-10</p>
+<h2 class="pkg-version" data-toc-text="2.0.1" id="usethis-201">usethis 2.0.1<a class="anchor" aria-label="anchor" href="#usethis-201"></a></h2>
 <ul><li><p>All functions that require a package now ask you if you’d like to install it.</p></li>
 <li><p>Added <code><a href="../reference/edit_file.html">edit_template()</a></code> for opening and creating files in <code>inst/templates</code> (for use with <code><a href="../reference/use_template.html">use_template()</a></code>) (<a href="https://github.com/malcolmbarrett" class="external-link">@malcolmbarrett</a>, <a href="https://github.com/r-lib/usethis/issues/1319" class="external-link">#1319</a>).</p></li>
 <li><p><code><a href="../reference/use_vignette.html">use_article()</a></code> now creates the file in the <code>vignettes/articles/</code> (<a href="https://github.com/r-lib/usethis/issues/548" class="external-link">#548</a>).</p></li>
@@ -347,7 +350,7 @@
 <li><p><code><a href="../reference/use_readme_rmd.html">use_readme_rmd()</a></code>, <code><a href="../reference/use_readme_rmd.html">use_readme_md()</a></code>, <code><a href="../reference/tidyverse.html">use_tidy_contributing()</a></code>, and <code><a href="../reference/tidyverse.html">use_tidy_support()</a></code> use updated logic for determining the <code>OWNER/REPO</code> spec of the target repo (<a href="https://github.com/r-lib/usethis/issues/1312" class="external-link">#1312</a>).</p></li>
 </ul></div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="2.0.0" id="usethis-200">usethis 2.0.0<a class="anchor" aria-label="anchor" href="#usethis-200"></a></h2><p class="text-muted">CRAN release: 2020-12-10</p>
+<h2 class="pkg-version" data-toc-text="2.0.0" id="usethis-200">usethis 2.0.0<a class="anchor" aria-label="anchor" href="#usethis-200"></a></h2>
 <div class="section level3">
 <h3 id="adoption-of-gert-and-changes-to-gitgithub-credential-handling-2-0-0">Adoption of gert and changes to Git/GitHub credential handling<a class="anchor" aria-label="anchor" href="#adoption-of-gert-and-changes-to-gitgithub-credential-handling-2-0-0"></a></h3>
 <p>Usethis has various functions that help with Git-related tasks, which break down into two categories:</p>
@@ -456,11 +459,11 @@
 </div>
 </div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="1.6.3" id="usethis-163">usethis 1.6.3<a class="anchor" aria-label="anchor" href="#usethis-163"></a></h2><p class="text-muted">CRAN release: 2020-09-17</p>
+<h2 class="pkg-version" data-toc-text="1.6.3" id="usethis-163">usethis 1.6.3<a class="anchor" aria-label="anchor" href="#usethis-163"></a></h2>
 <p>Patch release to refactor usage of withr in the tests for forward compatibility with an upcoming withr release. All changes are within the usethis tests.</p>
 </div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="1.6.1" id="usethis-161">usethis 1.6.1<a class="anchor" aria-label="anchor" href="#usethis-161"></a></h2><p class="text-muted">CRAN release: 2020-04-29</p>
+<h2 class="pkg-version" data-toc-text="1.6.1" id="usethis-161">usethis 1.6.1<a class="anchor" aria-label="anchor" href="#usethis-161"></a></h2>
 <p>Patch release to align some path handling internals with an update coming in the fs package.</p>
 <ul><li><p><code><a href="../reference/use_github_links.html">use_github_links()</a></code> is a bit more clever about remotes (e.g. <code>origin</code> vs. <code>upstream</code>), which makes it easier to make a PR that adds GitHub links for a package you’ve forked.</p></li>
 <li><p><code><a href="../reference/use_pkgdown.html">use_pkgdown()</a></code> now <code>.gitignore</code>s the destination directory and only adds the destination directory to the config file if it departs from the default (which is <code>docs/</code>).</p></li>
@@ -469,7 +472,7 @@
 <li><p><code><a href="../reference/tidyverse.html">create_tidy_package()</a></code> now uses an MIT license (<a href="https://github.com/topepo" class="external-link">@topepo</a>, <a href="https://github.com/r-lib/usethis/issues/1096" class="external-link">#1096</a>).</p></li>
 </ul></div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="1.6.0" id="usethis-160">usethis 1.6.0<a class="anchor" aria-label="anchor" href="#usethis-160"></a></h2><p class="text-muted">CRAN release: 2020-04-09</p>
+<h2 class="pkg-version" data-toc-text="1.6.0" id="usethis-160">usethis 1.6.0<a class="anchor" aria-label="anchor" href="#usethis-160"></a></h2>
 <div class="section level3">
 <h3 id="github-actions-1-6-0">GitHub actions<a class="anchor" aria-label="anchor" href="#github-actions-1-6-0"></a></h3>
 <ul><li><p>New <code>use_github_actions()</code>, <code>use_github_action_check_release()</code>, <code>use_github_action_check_full()</code>, <code>use_github_action_pr_commands()</code>, to set up GitHub Actions for a package (<a href="https://github.com/jimhester" class="external-link">@jimhester</a>).</p></li>
@@ -546,7 +549,7 @@
 </div>
 </div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="1.5.1" id="usethis-151">usethis 1.5.1<a class="anchor" aria-label="anchor" href="#usethis-151"></a></h2><p class="text-muted">CRAN release: 2019-07-04</p>
+<h2 class="pkg-version" data-toc-text="1.5.1" id="usethis-151">usethis 1.5.1<a class="anchor" aria-label="anchor" href="#usethis-151"></a></h2>
 <p>This is a patch release with various small features and bug fixes.</p>
 <div class="section level3">
 <h3 id="using-the-pipe--or-the-tidy-eval-toolkit-in-your-package-1-5-1">Using the pipe <code>%&gt;%</code> or the tidy eval toolkit in your package<a class="anchor" aria-label="anchor" href="#using-the-pipe--or-the-tidy-eval-toolkit-in-your-package-1-5-1"></a></h3>
@@ -579,7 +582,7 @@
 </div>
 </div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="1.5.0" id="usethis-150">usethis 1.5.0<a class="anchor" aria-label="anchor" href="#usethis-150"></a></h2><p class="text-muted">CRAN release: 2019-04-07</p>
+<h2 class="pkg-version" data-toc-text="1.5.0" id="usethis-150">usethis 1.5.0<a class="anchor" aria-label="anchor" href="#usethis-150"></a></h2>
 <div class="section level3">
 <h3 id="git-github-and-gitlab-1-5-0">Git, GitHub (and GitLab)<a class="anchor" aria-label="anchor" href="#git-github-and-gitlab-1-5-0"></a></h3>
 <p>usethis gains several functions to inspect and manipulate the Git situation for the current project = repository. We also provide more control and visibility into git2r’s workings, especially around credentials (usethis uses git2r for all Git operations).</p>
@@ -696,7 +699,7 @@
 </ul></div>
 </div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="1.4.0" id="usethis-140">usethis 1.4.0<a class="anchor" aria-label="anchor" href="#usethis-140"></a></h2><p class="text-muted">CRAN release: 2018-08-14</p>
+<h2 class="pkg-version" data-toc-text="1.4.0" id="usethis-140">usethis 1.4.0<a class="anchor" aria-label="anchor" href="#usethis-140"></a></h2>
 <div class="section level3">
 <h3 id="file-system-1-4-0">File system<a class="anchor" aria-label="anchor" href="#file-system-1-4-0"></a></h3>
 <p>All usethis file system operations now use the <a href="https://fs.r-lib.org" class="external-link">fs</a> package (<a href="https://github.com/r-lib/usethis/issues/177" class="external-link">#177</a>). This should not change how usethis functions, but users may notice these features of fs-mediated paths:</p>
@@ -739,7 +742,7 @@
 </div>
 </div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="1.3.0" id="usethis-130">usethis 1.3.0<a class="anchor" aria-label="anchor" href="#usethis-130"></a></h2><p class="text-muted">CRAN release: 2018-02-24</p>
+<h2 class="pkg-version" data-toc-text="1.3.0" id="usethis-130">usethis 1.3.0<a class="anchor" aria-label="anchor" href="#usethis-130"></a></h2>
 <ul><li><p>usethis has a website: <a href="https://usethis.r-lib.org" class="uri">https://usethis.r-lib.org</a> (<a href="https://github.com/r-lib/usethis/issues/217" class="external-link">#217</a>). It includes an article with advice on system setup, for usethis and for R development more generally.</p></li>
 <li><p><code>edit_*()</code> functions now return the target path, invisibly (<a href="https://github.com/r-lib/usethis/issues/255" class="external-link">#255</a>).</p></li>
 <li><p><code>edit_git_ignore(scope = "user")</code> prefers <code>~/.gitignore</code>, but detects an existing <code>~/.gitignore_global</code>, if it exists. If a new global gitignore file is created, it is created as <code>~/.gitignore</code> and recorded in user’s git config as the <code>core.excludesfile</code> (<a href="https://github.com/r-lib/usethis/issues/255" class="external-link">#255</a>).</p></li>
@@ -759,7 +762,7 @@
 </ul></div>
 </div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="1.2.0" id="usethis-120">usethis 1.2.0<a class="anchor" aria-label="anchor" href="#usethis-120"></a></h2><p class="text-muted">CRAN release: 2018-01-19</p>
+<h2 class="pkg-version" data-toc-text="1.2.0" id="usethis-120">usethis 1.2.0<a class="anchor" aria-label="anchor" href="#usethis-120"></a></h2>
 <div class="section level3">
 <h3 id="new-functions-1-2-0">New functions<a class="anchor" aria-label="anchor" href="#new-functions-1-2-0"></a></h3>
 <ul><li><p><code><a href="../reference/zip-utils.html">use_course()</a></code> downloads a folder’s worth of materials from a ZIP file, with deliberate choices around the default folder name and location. Developed for use at the start of a workshop. Helps participants obtain materials from, e.g., a DropBox folder or GitHub repo (<a href="https://github.com/r-lib/usethis/issues/196" class="external-link">#196</a>).</p></li>
@@ -776,7 +779,7 @@
 </ul></div>
 </div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="1.1.0" id="usethis-110">usethis 1.1.0<a class="anchor" aria-label="anchor" href="#usethis-110"></a></h2><p class="text-muted">CRAN release: 2017-11-17</p>
+<h2 class="pkg-version" data-toc-text="1.1.0" id="usethis-110">usethis 1.1.0<a class="anchor" aria-label="anchor" href="#usethis-110"></a></h2>
 <div class="section level3">
 <h3 id="new-helpers-1-1-0">New helpers<a class="anchor" aria-label="anchor" href="#new-helpers-1-1-0"></a></h3>
 <ul><li><p><code><a href="../reference/browse-this.html">browse_github()</a></code>, <code><a href="../reference/browse-this.html">browse_github_issues()</a></code>, <code><a href="../reference/browse-this.html">browse_github_pulls()</a></code>, <code><a href="../reference/browse-this.html">browse_cran()</a></code> and <code>browse_travis()</code> open useful websites related to the current project or a named package. (<a href="https://github.com/r-lib/usethis/issues/96" class="external-link">#96</a>, <a href="https://github.com/r-lib/usethis/issues/103" class="external-link">#103</a>).</p></li>
@@ -795,7 +798,7 @@
 </ul></div>
 </div>
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="1.0.0" id="usethis-100">usethis 1.0.0<a class="anchor" aria-label="anchor" href="#usethis-100"></a></h2><p class="text-muted">CRAN release: 2017-10-22</p>
+<h2 class="pkg-version" data-toc-text="1.0.0" id="usethis-100">usethis 1.0.0<a class="anchor" aria-label="anchor" href="#usethis-100"></a></h2>
 <p>This is a new package that extracts out many functions that previously lived in devtools, as well as providing more building blocks so you can create your own helpers. As well as the many new helpers listed below, there are three main improvements to the package:</p>
 <ul><li>More support for general R projects, other than packages.</li>
 <li>A notion of an “active” project that all commands operate on.</li>
