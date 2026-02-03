@@ -2,6 +2,15 @@
 
 ## usethis (development version)
 
+- [`use_pipe()`](https://usethis.r-lib.org/dev/reference/use_pipe.md) is
+  now deprecated ([@math-mcshane](https://github.com/math-mcshane),
+  [\#2124](https://github.com/r-lib/usethis/issues/2124)).
+
+- [`use_claude_code()`](https://usethis.r-lib.org/dev/reference/use_claude_code.md)
+  is an experimental helper to set up Claude code in an R package in the
+  same way as the tidyverse team
+  ([\#2195](https://github.com/r-lib/usethis/issues/2195)).
+
 - Removes deprecated
   [`use_tidy_style()`](https://usethis.r-lib.org/dev/reference/tidy-deprecated.md)
   from to-do’s from upkeep
