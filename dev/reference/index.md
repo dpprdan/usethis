@@ -237,6 +237,8 @@ Package setup tasks, typically performed once.
 
 Conventions used in the tidyverse and r-lib organisations
 
+- [`learn_tidy_skill()`](https://usethis.r-lib.org/dev/reference/learn_tidy_skill.md)
+  **\[experimental\]** : Learn a specialized skill
 - [`use_tidy_github_actions()`](https://usethis.r-lib.org/dev/reference/tidyverse.md)
   [`create_tidy_package()`](https://usethis.r-lib.org/dev/reference/tidyverse.md)
   [`use_tidy_description()`](https://usethis.r-lib.org/dev/reference/tidyverse.md)
@@ -284,6 +286,11 @@ or for a specific project
   :
 
   Helpers to make useful changes to `.Rprofile`
+
+- [`use_env_var()`](https://usethis.r-lib.org/dev/reference/use_env_var.md)
+  :
+
+  Set an environment variable in `.Renviron`
 
 - [`edit_r_profile()`](https://usethis.r-lib.org/dev/reference/edit.md)
   [`edit_r_environ()`](https://usethis.r-lib.org/dev/reference/edit.md)
