@@ -2,6 +2,11 @@
 
 ## usethis (development version)
 
+- [`use_git()`](https://usethis.r-lib.org/dev/reference/use_git.md) now
+  works in a directory that is not yet recognized as a usethis project:
+  it assumes you want to initialise a Git repository in the current
+  working directory
+  ([\#2242](https://github.com/r-lib/usethis/issues/2242)).
 - Messages and documentation now refer to “RStudio or Positron” instead
   of just “RStudio”, where the functionality applies to both IDEs
   ([\#2182](https://github.com/r-lib/usethis/issues/2182)).
@@ -41,6 +46,12 @@
   contains curly braces
   ([\#2107](https://github.com/r-lib/usethis/issues/2107),
   [@jonthegeek](https://github.com/jonthegeek)).
+- [`use_description()`](https://usethis.r-lib.org/dev/reference/use_description.md)
+  and
+  [`use_roxygen_md()`](https://usethis.r-lib.org/dev/reference/use_roxygen_md.md)
+  now record the roxygen2 version in the `Config/roxygen2/version` field
+  (instead of `RoxygenNote`) when roxygen2 \>= 8.0.0 is installed
+  ([\#2226](https://github.com/r-lib/usethis/issues/2226)).
 - New
   [`use_env_var()`](https://usethis.r-lib.org/dev/reference/use_env_var.md)
   sets an environment variable in `.Renviron`, prompting for the value
@@ -77,6 +88,10 @@
   coding agents in the same way as the tidyverse team
   ([\#2195](https://github.com/r-lib/usethis/issues/2195),
   [\#2239](https://github.com/r-lib/usethis/issues/2239)).
+- [`use_release_issue()`](https://usethis.r-lib.org/dev/reference/use_release_issue.md)
+  now points first-time submitters to `devtools::check_doc_fields()` to
+  verify that exported functions document their return values
+  ([\#2241](https://github.com/r-lib/usethis/issues/2241)).
 - [`use_tidy_upkeep_issue()`](https://usethis.r-lib.org/dev/reference/tidyverse.md)
   no longer includes the deprecated
   [`use_tidy_style()`](https://usethis.r-lib.org/dev/reference/tidy-deprecated.md)
